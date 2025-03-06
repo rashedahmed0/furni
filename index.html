@@ -425,12 +425,12 @@
         </div>
     </section>
     <!-- blog section  -->
-    <section class="blog py-20 bg-[#eff2f1]">
+    <section class="blog pt-20 pb-[200px] bg-[#eff2f1]">
         <div class="w-[90%] mx-auto">
-            <div class="blog-title flex justify-between ">
-                <h1 class="text-3xl font-medium">Recent Blog</h1>
-                <p style="border-bottom: 1px solid black ;" class="font-medium px-2"><a href="">View All
-                        Posts</a></p>
+            <div class="blog-title flex justify-between lg:flex-row flex-col">
+                <h1 class="text-3xl font-medium mb-3 lg:mb-1">Recent Blog</h1>
+                <a style="border-bottom: 1px solid black ;" class="font-medium px-2 w-[130px]" href="">View All
+                    Posts</a>
             </div>
             <div class="flex justify-between lg:flex-row flex-col  mt-10">
                 <div class="basis-[32%] my-3">
@@ -454,6 +454,27 @@
                         <span class="text-sm text-[#6a6a6a]">on</span> Dec 12, 2024
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- upper footer -->
+    <section class="upper-footer w-[90%] mx-auto mt-[100px] mb-[50px]">
+        <div class="flex justify-between relative ">
+            <div class="mt-10 lg:mt-1">
+                <h1 class=" text-[#3b5d50] text-2xl mb-3"><i class="fa-regular fa-envelope"></i> Subscribe to Newsletter
+                </h1>
+                <div class=" flex items-end gap-2 ">
+                    <div class="flex  gap-2  lg:flex-row flex-col ">
+                        <input type="text" placeholder="Enter your name" class="input input-lg" />
+                        <input type="email" required placeholder="Enter your email" class="input input-lg" />
+                    </div>
+                    <button class="px-7 py-2 text-[22px] bg-[#3b5d50] rounded-md text-white"><i
+                            class="fa-regular fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="">
+                <img class="absolute lg:w-[35%] w-[300px] right-0 top-[-234px]" src="./images/sofa.png" alt="">
             </div>
         </div>
     </section>
