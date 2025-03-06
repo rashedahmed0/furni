@@ -4,11 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Furni.</title>
+    <!-- tailwind cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        header ul li a {
+            position: relative;
+            text-decoration: none;
+            /* Remove default underline */
+            color: inherit;
+            /* Inherit text color */
+        }
+
+        header ul li a::after {
+            content: "";
+            position: absolute;
+            background-color: #ef850c;
+            width: 0;
+            /* Start with no width */
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+            /* Smooth transition for width */
+        }
+
+        header ul li a:hover::after {
+            width: 100%;
+            /* Expand to full width on hover */
+        }
+    </style>
+
+
 </head>
 
-<body>
+<body class="max-w-[1500px] mx-auto">
 
+    <!-- header section  -->
+    <header class="header  bg-[#3b5d50]">
+        <div class="navbar w-[90%] mx-auto flex  justify-between items-center">
+            <div class="flex flex-row-reverse w-full lg:w-[30%] justify-between">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-white  bg-[#3b5d50] ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="  dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow absolute right-0">
+                        <li class="mb-2"><a href="" class="pointer pb-1  px-2 text-sm   font-semibold">Home </a></li>
+                        <li class="mb-2"><a href="" class="pointer pb-1  px-2 text-sm   font-semibold">Shop</a></li>
+                        <li class="mb-2"><a href="" class="pointer pb-1  px-2 text-sm   font-semibold">About us</a></li>
+                        <li class="mb-2"><a href="" class="pointer pb-1  px-2 text-sm   font-semibold">Service </a></li>
+                        <li class="mb-2"><a href="" class="pointer pb-1  px-2 text-sm   font-semibold">Blog </a></li>
+                        <li class="mb-2"><a href="" class="pointer pb-1  px-2 text-sm   font-semibold">Contact us </a>
+                        </li>
+                        <li class="flex flex-row gap-5"><a href="..." class="pointer pb-3 px-2"><i
+                                    class="fa-solid fa-user"></i></a><a href="" class="pointer pb-3 px-2"><i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="text-3xl pointer font-bold text-white">Furni.</a>
+            </div>
+            <div class="hidden lg:flex">
+                <ul class="flex flex-row gap-5 px-1 text-white">
+                    <li><a href="" class="pointer pb-2 px-2  font-semibold">Home </a></li>
+                    <li><a href="" class="pointer pb-2 px-2  font-semibold">Shop</a></li>
+                    <li><a href="" class="pointer pb-2 px-2  font-semibold">About us</a></li>
+                    <li><a href="" class="pointer pb-2 px-2  font-semibold">Service </a></li>
+                    <li><a href="" class="pointer pb-2 px-2  font-semibold">Blog </a></li>
+                    <li><a href="" class="pointer pb-2 px-2  font-semibold">Contact us </a></li>
+                    <li class="flex flex-row gap-5"><a href="..." class="pointer pb-3 px-2"><i
+                                class="fa-solid fa-user"></i></a><a href="" class="pointer pb-3 px-2"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- banner section  -->
+    <section class="banner bg-[#3b5d50] pt-10 ">
+        <div class="flex w-[90%] mx-auto justify-between items-center flex-col lg:flex-row bg-bottom">
+            <!-- banner text -->
+            <div class="basis-[45%]">
+                <h1 class="lg:text-6xl text-4xl font-bold text-white ">Modern Interior Design Studio</h1>
+                <p class="text-[#ffffff80] my-5">Modern Interior Design Studio specializes in sleek, functional spaces
+                    blending
+                    contemporary
+                    aesthetics with personalized, innovative solutions for residential and commercial projects.</p>
+                <button class="text-lg font-semibold px-7 py-2 mb-3 rounded-[20px] bg-[#f9bf29] hover:bg-[#ffc107]"
+                    style="transition: 0.1s;">Shop
+                    Now</button>
+                <button
+                    class="text-lg text-white font-semibold px-7 py-2 mb-3 rounded-[30px]  hover:border-white border-[#ffffff4d] border-2"
+                    style="transition: 0.1s;">Explore</button>
+            </div>
+            <!-- banner img -->
+            <div class="lg:basis-[60%] banner-img">
+                <img style="background-image: url(./images/dots-light.svg); background-repeat: no-repeat; background-position: right 53px;"
+                    src="./images/couch.png" alt="">
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
