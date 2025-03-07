@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furni.</title>
+    <!-- tailwind cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        header ul li a {
+            position: relative;
+            text-decoration: none;
+            /* Remove default underline */
+            color: inherit;
+            /* Inherit text color */
+        }
+
+        header ul li a::after {
+            content: "";
+            position: absolute;
+            /* background-color: #0000002d; */
+            background-color: #ef850c;
+            width: 0;
+            /* Start with no width */
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+            /* Smooth transition for width */
+        }
+
+        header ul li a:hover::after {
+            width: 100%;
+            /* Expand to full width on hover */
+        }
+
+        .product-card {}
+
+        .product-card button {
+            background: transparent;
+            color: transparent;
+        }
+
+        .product-card:hover button {
+            background: #000;
+            transform: translateY(45px);
+            transition: 0.4s;
+            color: white;
+        }
+
+        /*  */
+    </style>
+
+
+</head>
+
+<body class="max-w-[1500px] mx-auto">
+
+    <!-- header section  -->
+    <header class="header  bg-[#3b5d50]">
+        <div class="navbar w-[90%] mx-auto flex  justify-between items-center">
+            <div class="flex flex-row-reverse w-full lg:w-[30%] justify-between">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-white  bg-[#3b5d50] ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="  dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow absolute right-0">
+                        <li class="mb-2"><a href="" class="pointer pb-1  px-2 text-sm   font-semibold">Home </a></li>
+                        <li class="mb-2"><a href="" class="pointer pb-1  px-2 text-sm   font-semibold">Shop</a></li>
+                        <li class="mb-2"><a href="" class="pointer pb-1  px-2 text-sm   font-semibold">About us</a></li>
+                        <li class="mb-2"><a href="" class="pointer pb-1  px-2 text-sm   font-semibold">Service </a></li>
+                        <li class="mb-2"><a href="" class="pointer pb-1  px-2 text-sm   font-semibold">Blog </a></li>
+                        <li class="mb-2"><a href="" class="pointer pb-1  px-2 text-sm   font-semibold">Contact us </a>
+                        </li>
+                        <li class="flex flex-row gap-5"><a href="..." class="pointer pb-3 px-2"><i
+                                    class="fa-solid fa-user"></i></a><a href="" class="pointer pb-3 px-2"><i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="text-3xl pointer font-bold text-white">Furni.</a>
+            </div>
+            <div class="hidden lg:flex">
+                <ul class="flex flex-row gap-5 px-1 text-white">
+                    <li><a href="" class="pointer pb-2 px-2  font-semibold">Home </a></li>
+                    <li><a href="" class="pointer pb-2 px-2  font-semibold">Shop</a></li>
+                    <li><a href="" class="pointer pb-2 px-2  font-semibold">About us</a></li>
+                    <li><a href="" class="pointer pb-2 px-2  font-semibold">Service </a></li>
+                    <li><a href="" class="pointer pb-2 px-2  font-semibold">Blog </a></li>
+                    <li><a href="" class="pointer pb-2 px-2  font-semibold">Contact us </a></li>
+                    <li class="flex flex-row gap-5"><a href="..." class="pointer pb-3 px-2"><i
+                                class="fa-solid fa-user"></i></a><a href="" class="pointer pb-3 px-2"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- banner section  -->
+    <section class="banner bg-[#3b5d50] md:py-[140px]  py-10">
+        <div class="flex w-[90%] mx-auto justify-between items-center flex-col lg:flex-row bg-bottom">
+            <!-- banner text -->
+            <div class="">
+                <h1 class="text-4xl font-bold text-white"> Shop</h1>
+            </div>
+        </div>
+    </section>
+    <!-- craft section -->
+    <section class="craft pt-[100px] pb-[250px]  bg-[#eff2f1]">
+        <div class="w-[90%] mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <div class="basis-[24%]  my-5">
+                <div class="product-card bg-transparent  shadow-sm">
+                    <figure class="px-10 pt-5">
+                        <img src="./images/product-1.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Nordic Chair</h2>
+                        <p><span>50.00</span>$</p>
+
+                        <div class="card-actions mt-3">
+                            <button
+                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basis-[24%]  my-5">
+                <div class="product-card bg-transparent  shadow-sm">
+                    <figure class="px-10 pt-5">
+                        <img src="./images/product-2.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Kruzo Aero Chair</h2>
+                        <p><span>78.00</span>$</p>
+
+                        <div class="card-actions mt-3">
+                            <button
+                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basis-[24%]  my-5">
+                <div class="product-card bg-transparent  shadow-sm">
+                    <figure class="px-10 pt-5">
+                        <img src="./images/product-3.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Ergonomic Chair</h2>
+                        <p><span>34.00</span>$</p>
+
+                        <div class="card-actions mt-3">
+                            <button
+                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basis-[24%]  my-5">
+                <div class="product-card bg-transparent  shadow-sm">
+                    <figure class="px-10 pt-5">
+                        <img src="./images/product-1.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Nordic Chair</h2>
+                        <p><span>50.00</span>$</p>
+
+                        <div class="card-actions mt-3">
+                            <button
+                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="basis-[24%]  my-5">
+                <div class="product-card bg-transparent  shadow-sm">
+                    <figure class="px-10 pt-5">
+                        <img src="./images/product-1.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Nordic Chair</h2>
+                        <p><span>50.00</span>$</p>
+
+                        <div class="card-actions mt-3">
+                            <button
+                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basis-[24%]  my-5">
+                <div class="product-card bg-transparent  shadow-sm">
+                    <figure class="px-10 pt-5">
+                        <img src="./images/product-2.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Kruzo Aero Chair</h2>
+                        <p><span>78.00</span>$</p>
+
+                        <div class="card-actions mt-3">
+                            <button
+                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basis-[24%]  my-5">
+                <div class="product-card bg-transparent  shadow-sm">
+                    <figure class="px-10 pt-5">
+                        <img src="./images/product-3.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Ergonomic Chair</h2>
+                        <p><span>34.00</span>$</p>
+
+                        <div class="card-actions mt-3">
+                            <button
+                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basis-[24%]  my-5">
+                <div class="product-card bg-transparent  shadow-sm">
+                    <figure class="px-10 pt-5">
+                        <img src="./images/product-1.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Nordic Chair</h2>
+                        <p><span>50.00</span>$</p>
+
+                        <div class="card-actions mt-3">
+                            <button
+                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- upper footer -->
+    <section class="upper-footer w-[90%] mx-auto mt-[100px] mb-[50px]">
+        <div class="flex justify-between relative ">
+            <div class="mt-10 lg:mt-1">
+                <h1 class=" text-[#3b5d50] text-2xl mb-3"><i class="fa-regular fa-envelope"></i> Subscribe to Newsletter
+                </h1>
+                <div class=" flex items-end gap-2 ">
+                    <div class="flex  gap-2  lg:flex-row flex-col ">
+                        <input type="text" placeholder="Enter your name" class="input input-lg" />
+                        <input type="email" required placeholder="Enter your email" class="input input-lg" />
+                    </div>
+                    <button class="px-7 py-2 text-[22px] bg-[#3b5d50] rounded-md text-white"><i
+                            class="fa-regular fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="">
+                <img class="absolute lg:w-[35%] w-[300px] right-0 top-[-234px]" src="./images/sofa.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- middle footer section -->
+    <section class="middle-section w-[90%] mx-auto my-[100px]">
+        <div class="flex  items-start flex-col lg:flex-row ">
+            <div class=" lg:w-[30%] w-full">
+                <h1 class="text-3xl font-semibold text-[#3b5d50]  mb-4">Furni.</h1>
+                <p class="text-[#6a6a6a] mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl
+                    dapibus malesuada.
+                    Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque
+                    habitant</p>
+                <div class="brand flex space-x-4">
+                    <div
+                        class="flex items-center justify-center w-[40px] h-[40px] bg-[#dce5e4] hover:bg-[#3b5d50] text-[#3b5d50] hover:text-white rounded-full transition-all duration-200">
+                        <i class="fa-brands fa-facebook-f text-md"></i>
+                    </div>
+                    <div
+                        class="flex items-center justify-center w-[40px] h-[40px] bg-[#dce5e4] hover:bg-[#3b5d50] text-[#3b5d50] hover:text-white rounded-full transition-all duration-200">
+                        <i class="fa-brands fa-instagram text-md"></i>
+                    </div>
+                    <div
+                        class="flex items-center justify-center w-[40px] h-[40px] bg-[#dce5e4] hover:bg-[#3b5d50] text-[#3b5d50] hover:text-white rounded-full transition-all duration-200">
+                        <i class="fa-brands fa-twitter text-md"></i>
+                    </div>
+                    <div
+                        class="flex items-center justify-center w-[40px] h-[40px] bg-[#dce5e4] hover:bg-[#3b5d50] text-[#3b5d50] hover:text-white rounded-full transition-all duration-200">
+                        <i class="fa-brands fa-linkedin text-md"></i>
+                    </div>
+                </div>
+            </div>
+            <div class=" lg:w-[60%] w-full ml-5 lg:ml-20  grid grid-cols-2 lg:grid-cols-4 gap-4 mt-5 lg:mt-1">
+                <div class="mt-4">
+                    <ul class="flex flex-col">
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Home</a></li>
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">About us</a></li>
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Service</a></li>
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Blog</a></li>
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <ul class="flex flex-col">
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Support</a></li>
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Knowledge base</a></li>
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Live chat</a></li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <ul class="flex flex-col">
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Jobs</a></li>
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Our Team</a></li>
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Leadership</a></li>
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <ul class="flex flex-col">
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Nordic Chair</a></li>
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Ergonomic Chair</a></li>
+                        <li class="mb-4"><a href="" class="text-sm hover:text-[#8b9190]">Kruzo Aero</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <div class="text-center my-5">
+        <p>Copyright ©2025. All Rights Reserved. — Rashed Ahmed </p>
+    </div>
+</body>
+
+</html>
