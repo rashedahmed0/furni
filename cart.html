@@ -33,10 +33,6 @@
             /* Smooth transition for width */
         }
 
-        .active {
-            border-bottom: 3px solid #ef850c;
-        }
-
         header ul li a:hover::after {
             width: 100%;
             /* Expand to full width on hover */
@@ -45,13 +41,20 @@
         .product-card {}
 
         .product-card button {
-            background: white;
+            background: transparent;
+            color: transparent;
         }
 
         .product-card:hover button {
             background: #000;
+            /* background: #dddddd; */
             transform: translateY(45px);
             transition: 0.4s;
+            color: white;
+        }
+
+        .active {
+            border-bottom: 3px solid #ef850c;
         }
 
         /*  */
@@ -104,44 +107,52 @@
                     <li><a href="./about.html" class="pointer pb-2 px-2  font-semibold">About us</a></li>
                     <li><a href="./service.html" class="pointer pb-2 px-2  font-semibold">Service </a></li>
                     <li><a href="./blog.html" class="pointer pb-2 px-2  font-semibold">Blog </a></li>
-                    <li><a href="./contact.html" class="pointer pb-2 px-2 active  font-semibold">Contact us </a></li>
+                    <li><a href="./contact.html" class="pointer pb-2 px-2  font-semibold">Contact us </a></li>
                     <li class="flex flex-row gap-5"><a href="..." class="pointer pb-3 px-2"><i
-                                class="fa-solid fa-user"></i></a><a href="" class="pointer pb-3 px-2"><i
-                                class="fa-solid fa-cart-shopping"></i></a>
+                                class="fa-solid fa-user"></i></a><a href="./cart.html"
+                            class="pointer pb-3 px-2 active "><i class="fa-solid fa-cart-shopping "></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
     <!-- banner section  -->
-    <section class="banner bg-[#3b5d50] pt-10 ">
+    <section class="banner bg-[#3b5d50] md:py-[140px]  py-10">
         <div class="flex w-[90%] mx-auto justify-between items-center flex-col lg:flex-row bg-bottom">
             <!-- banner text -->
-            <div class="basis-[45%]">
-                <h1 class="lg:text-5xl text-4xl font-bold text-white ">Cart </h1>
-                <p class="text-[#ffffff80] my-7">Modern Interior Design Studio specializes in sleek, functional spaces
-                    blending
-                    contemporary
-                    aesthetics with personalized, innovative solutions for residential and commercial projects.</p>
-                <button class="text-lg font-semibold px-7 py-2 mb-3 rounded-[20px] bg-[#f9bf29] hover:bg-[#ffc107]"
-                    style="transition: 0.1s;">Shop
-                    Now</button>
-                <button
-                    class="text-lg text-white font-semibold px-7 py-2 mb-3 rounded-[30px]  hover:border-white border-[#ffffff4d] border-2"
-                    style="transition: 0.1s;">Explore</button>
-            </div>
-            <!-- banner img -->
-            <div class="lg:basis-[60%] banner-img">
-                <img style="background-image: url(./images/dots-light.svg); background-repeat: no-repeat; background-position: right 53px;"
-                    src="./images/couch.png" alt="">
+            <div class="">
+                <h1 class="lg:text-5xl text-4xl font-bold text-white"> Cart </h1>
             </div>
         </div>
     </section>
-
     <!-- cart section -->
-    <section class="cart pt-[100px] pb-[200px] bg-[#eff2f1]">
-        <div class=" lg:w-[60%] w-[90%] mx-auto">
+    <section class="cart pt-[100px] pb-[250px]  bg-[#eff2f1]">
+        <div class="w-[90%] mx-auto ">
+            <div class="flex justify-center items-start rounded-xl ">
+                <div class="shopping-cart basis-[65%] p-5 py-9"
+                    style="box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 20px;">
+                    <div class="title">
+                        <h1 class="text-2xl font-semibold">Shopping Cart</h1>
+                    </div>
+                    <div class="mt-10">
+                        <div class="flex justify-between items-center">
+                            <img class="w-[100px]" src="./images/product-1.png" alt="">
+                            <h4 class="">product name </h4>
+                            <p class="">product price </p>
+                            <button class="">x</button>
 
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="summary basis-[35%] bg-[#dddddd] p-5 py-10 rounded-xl">
+                    <div class="title">
+                        <h1 class="text-xl font-semibold "> Summary </h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -233,6 +244,19 @@
     <div class="text-center my-5">
         <p>Copyright ©2025. All Rights Reserved. — Rashed Ahmed </p>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
