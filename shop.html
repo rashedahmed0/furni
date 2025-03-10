@@ -131,14 +131,14 @@
             <div class="basis-[24%]  my-5">
                 <div class="product-card bg-transparent  shadow-sm">
                     <figure class="px-10 pt-5">
-                        <img src="./images/product-1.png" alt="" class="rounded-xl" />
+                        <img id="product-img-1" src="./images/product-1.png" alt="" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Nordic Chair</h2>
-                        <p><span>50.00</span>$</p>
+                        <h2 id="product-title-1" class="card-title">Nordic Chair</h2>
+                        <p><span id="product-price-1">50.00</span>$</p>
 
                         <div class="card-actions mt-3">
-                            <button
+                            <button onclick="sendToCart('product-img-1' , 'product-title-1' , 'product-price-1')"
                                 class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
                         </div>
                     </div>
@@ -349,6 +349,20 @@
     <div class="text-center my-5">
         <p>Copyright ©2025. All Rights Reserved. — Rashed Ahmed </p>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+
 </body>
 
 </html>
