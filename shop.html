@@ -55,8 +55,6 @@
         .active {
             border-bottom: 3px solid #ef850c;
         }
-
-        /*  */
     </style>
 
 
@@ -92,8 +90,7 @@
                                 class="pointer pb-1  px-2 text-sm   font-semibold">Contact us </a>
                         </li>
                         <li class="flex flex-row gap-5"><a href="..." class="pointer pb-3 px-2"><i
-                                    class="fa-solid fa-user"></i></a><a href="" class="pointer pb-3 px-2"><i
-                                    class="fa-solid fa-cart-shopping"></i></a>
+                                    class="fa-solid fa-user"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -108,8 +105,7 @@
                     <li><a href="./blog.html" class="pointer pb-2 px-2  font-semibold">Blog </a></li>
                     <li><a href="./contact.html" class="pointer pb-2 px-2  font-semibold">Contact us </a></li>
                     <li class="flex flex-row gap-5"><a href="..." class="pointer pb-3 px-2"><i
-                                class="fa-solid fa-user"></i></a><a href="./cart.html" class="pointer pb-3 px-2"><i
-                                class="fa-solid fa-cart-shopping"></i></a>
+                                class="fa-solid fa-user"></i></a>
                     </li>
                 </ul>
             </div>
@@ -126,138 +122,159 @@
     </section>
     <!-- craft section -->
     <section class="craft pt-[100px] pb-[250px]  bg-[#eff2f1]">
-        <div class="w-[90%] mx-auto  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="w-[90%] mx-auto flex justify-between items-start flex-col lg:flex-row gap-4 ">
+            <div class="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:w-[70%] w-full">
 
-            <div class="basis-[24%]  my-5">
-                <div class="product-card bg-transparent  shadow-sm">
-                    <figure class="px-10 pt-5">
-                        <img id="product-img-1" src="./images/product-1.png" alt="" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 id="product-title-1" class="card-title">Nordic Chair</h2>
-                        <p><span id="product-price-1">50.00</span>$</p>
+                <div class="basis-[24%]  my-5">
+                    <div class="product-card bg-transparent  shadow-sm">
+                        <figure class="px-10 pt-5">
+                            <img id="product-img-1" src="./images/product-1.png" alt="" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 id="product-title-1" class="card-title">Nordic Chair</h2>
+                            <p><span id="product-price-1">50.00</span>$</p>
 
-                        <div class="card-actions mt-3">
-                            <button onclick="sendToCart('product-img-1' , 'product-title-1' , 'product-price-1')"
-                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                            <div class="card-actions mt-3">
+                                <button onclick="sendToCart('product-img-1' , 'product-title-1' , 'product-price-1')"
+                                    class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basis-[24%]  my-5">
+                    <div class="product-card bg-transparent  shadow-sm">
+                        <figure class="px-10 pt-5">
+                            <img src="./images/product-2.png" alt="" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Kruzo Aero Chair</h2>
+                            <p><span>78.00</span>$</p>
+
+                            <div class="card-actions mt-3">
+                                <button
+                                    class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basis-[24%]  my-5">
+                    <div class="product-card bg-transparent  shadow-sm">
+                        <figure class="px-10 pt-5">
+                            <img src="./images/product-3.png" alt="" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Ergonomic Chair</h2>
+                            <p><span>34.00</span>$</p>
+
+                            <div class="card-actions mt-3">
+                                <button
+                                    class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="basis-[24%]  my-5">
+                    <div class="product-card bg-transparent  shadow-sm">
+                        <figure class="px-10 pt-5">
+                            <img src="./images/product-1.png" alt="" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Nordic Chair</h2>
+                            <p><span>50.00</span>$</p>
+
+                            <div class="card-actions mt-3">
+                                <button
+                                    class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basis-[24%]  my-5">
+                    <div class="product-card bg-transparent  shadow-sm">
+                        <figure class="px-10 pt-5">
+                            <img src="./images/product-2.png" alt="" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Kruzo Aero Chair</h2>
+                            <p><span>78.00</span>$</p>
+
+                            <div class="card-actions mt-3">
+                                <button
+                                    class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basis-[24%]  my-5">
+                    <div class="product-card bg-transparent  shadow-sm">
+                        <figure class="px-10 pt-5">
+                            <img src="./images/product-3.png" alt="" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Ergonomic Chair</h2>
+                            <p><span>34.00</span>$</p>
+
+                            <div class="card-actions mt-3">
+                                <button
+                                    class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="lg:w-[30%] w-full">
+                <div class=" ">
+                    <div class="shopping-cart  w-[100%] px-5 pt-9 pb-10 rounded-t-xl"
+                        style="box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 20px;">
+                        <div class="title">
+                            <h1 class="text-2xl font-semibold">Shopping Cart</h1>
+                        </div>
+                        <div id="shopping-cart" class="">
+                            <div class="mt-10 w-[100%] mx-auto">
+                                <div class="flex justify-between items-center">
+                                    <img class="lg:w-[70px] w-[50px]" src="./images/product-1.png" alt="">
+                                    <h4 id="shopping-cart-title" class=" w-[33%] text-md ">product name </h4>
+                                    <p id=" shopping-cart" class="w-[33%] text-md ">product price </p>
+                                    <button class="w-[27% text-xl ">x</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary  w-[100%] bg-[#dddddd] p-5 py-10 rounded-b-xl">
+                        <div class="title">
+                            <h1 class="text-xl font-semibold "> Summary </h1>
+                            <div class="mt-5">
+                                <h1 class="text-lg font-medium">Coupon</h1>
+                                <p class="text-sm my-2 ">Enter your coupon code if you have one.</p>
+                                <div class="flex">
+                                    <input class="input w-[65%]" type="text">
+                                    <button
+                                        class="w-[35%] px-3 py-1 text-white bg-[#2f271f] rounded-r-md hover:bg-black"
+                                        style="transition: 0.3s; ">Apply Code </button>
+                                </div>
+                                <div class="price mt-3">
+                                    <h1 class="text-lg font-semibold mt-4 mb-2">Cart Totals</h1>
+                                    <div class="flex justify-between font-medium mb-1">
+                                        <p>Subtotal</p><span>0</span>
+                                    </div>
+                                    <div class=" flex justify-between font-medium mb-5">
+                                        <p>Total</p><span>0</span>
+
+                                    </div>
+                                    <a href=""
+                                        class="w-[30%] px-4 py-3 text-white bg-[#2f271f] rounded-md hover:bg-black"
+                                        style="transition: 0.3s; ">Proceed To Checkout</a>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="basis-[24%]  my-5">
-                <div class="product-card bg-transparent  shadow-sm">
-                    <figure class="px-10 pt-5">
-                        <img src="./images/product-2.png" alt="" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title">Kruzo Aero Chair</h2>
-                        <p><span>78.00</span>$</p>
-
-                        <div class="card-actions mt-3">
-                            <button
-                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="basis-[24%]  my-5">
-                <div class="product-card bg-transparent  shadow-sm">
-                    <figure class="px-10 pt-5">
-                        <img src="./images/product-3.png" alt="" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title">Ergonomic Chair</h2>
-                        <p><span>34.00</span>$</p>
-
-                        <div class="card-actions mt-3">
-                            <button
-                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="basis-[24%]  my-5">
-                <div class="product-card bg-transparent  shadow-sm">
-                    <figure class="px-10 pt-5">
-                        <img src="./images/product-1.png" alt="" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title">Nordic Chair</h2>
-                        <p><span>50.00</span>$</p>
-
-                        <div class="card-actions mt-3">
-                            <button
-                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="basis-[24%]  my-5">
-                <div class="product-card bg-transparent  shadow-sm">
-                    <figure class="px-10 pt-5">
-                        <img src="./images/product-1.png" alt="" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title">Nordic Chair</h2>
-                        <p><span>50.00</span>$</p>
-
-                        <div class="card-actions mt-3">
-                            <button
-                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="basis-[24%]  my-5">
-                <div class="product-card bg-transparent  shadow-sm">
-                    <figure class="px-10 pt-5">
-                        <img src="./images/product-2.png" alt="" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title">Kruzo Aero Chair</h2>
-                        <p><span>78.00</span>$</p>
-
-                        <div class="card-actions mt-3">
-                            <button
-                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="basis-[24%]  my-5">
-                <div class="product-card bg-transparent  shadow-sm">
-                    <figure class="px-10 pt-5">
-                        <img src="./images/product-3.png" alt="" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title">Ergonomic Chair</h2>
-                        <p><span>34.00</span>$</p>
-
-                        <div class="card-actions mt-3">
-                            <button
-                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="basis-[24%]  my-5">
-                <div class="product-card bg-transparent  shadow-sm">
-                    <figure class="px-10 pt-5">
-                        <img src="./images/product-1.png" alt="" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <h2 class="card-title">Nordic Chair</h2>
-                        <p><span>50.00</span>$</p>
-
-                        <div class="card-actions mt-3">
-                            <button
-                                class="flex justify-center items-center h-10 w-10 rounded-full text-3xl bg-[#2f271f] text-white">+</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
@@ -358,7 +375,9 @@
 
 
 
-
+    <div id="toast-container" class="toast toast-top toast-center">
+        <!-- Toast messages will be dynamically inserted here -->
+    </div>
 
 
     <script src="./script.js"></script>
